@@ -1,0 +1,25 @@
+int main() {
+	int a;
+	char ch;
+
+	/* the while */
+	puts("r: ");
+	a = getnum();
+	while(a) {
+		print(a);
+		print(a*a);
+		puts("");
+		a = a - 1;
+	}
+
+	puts(" то 'q' ");
+	do {
+		ch = getche();
+	} while(ch !='q');
+
+	for(a=0; a<10; a = a + 1) {
+		print(a);
+	}
+	puts("");
+	return 0;
+}

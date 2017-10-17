@@ -1,0 +1,14 @@
+int factr(int i) {
+	if(i<2) {
+		return 1;
+	} else {
+		return i * factr(i-1);
+	}
+}
+
+int main() {
+	print("factr 4: ");
+	print(factr(4));
+	puts("");
+	return 0;
+}
